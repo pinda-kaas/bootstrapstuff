@@ -1,0 +1,11 @@
+$icon-font-path: "../bower_components/bootstrap-sass-official/assets/fonts/bootstrap/";
+// bower:scss
+@import "bootstrap-sass-official/assets/stylesheets/_bootstrap.scss";
+
+
+section {
+  @include make-row();
+  article {
+    @include make-lg-column(2);
+  }
+}

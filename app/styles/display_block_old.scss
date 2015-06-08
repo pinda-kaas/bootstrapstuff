@@ -1,0 +1,22 @@
+nav{
+  width: 500px;
+  background-color: blue;
+  padding:10px;
+}
+
+
+nav::after
+{
+  content:'';
+  display:block;
+  clear:both;
+}
+
+
+nav a{
+  color: #fff;
+  background-color: green;
+  padding:10px 20px;
+  display:block;
+  float:left;
+}
