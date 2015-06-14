@@ -3,14 +3,31 @@ $icon-font-path: "../bower_components/bootstrap-sass-official/assets/fonts/boots
 @import "bootstrap-sass-official/assets/stylesheets/_bootstrap.scss";
 
 
-li
+
+@mixin dit
 {
-  display: inline-block;
+  color:green;
 }
 
-section {
-  @include make-row();
-  article {
-    @include make-lg-column(2);
-  }
+
+p
+{
+  @include dit;
 }
+
+.panelrow {
+  //@include panel-variant(#d01919, #1cf21c, #000000, #bad017);
+}
+
+.custom-btn {
+  @include button-variant(#cece19, #000000, #2dbe27);
+}
+
+
+//
+//section {
+//  @include make-row();
+//  article {
+//    @include make-lg-column(2);
+//  }
+//}

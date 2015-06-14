@@ -11,9 +11,11 @@
     <!-- endbower -->
     <!-- endbuild -->
     <!-- build:css(.tmp) styles/main.css -->
-    <link rel="stylesheet" href="styles/main.css">
+    <!--<link rel="stylesheet" href="styles/main.css">-->
     <link rel="stylesheet" href="/bower_components/fontawesome/css/font-awesome.css"/>
-    <link rel="stylesheet" href="styles/blok.css"/>
+    <link rel="stylesheet" href="styles/main.css"/>
+    <link rel="stylesheet" href="styles/checkboxes.css"/>
+    <!--<link rel="stylesheet" href="styles/widget.css"/>-->
 
 
     <!-- endbuild -->
@@ -28,7 +30,7 @@
       <div class="header">
         <ul class="nav nav-pills pull-right">
           <li class="active"><a ng-href="#/home">Home</a></li>
-          <li><a ng-href="#/about">About</a></li>
+          <li><a ng-href="#/checkboxes">Checkboxes</a></li>
 
         </ul>
         <h3 class="text-muted">bootstrapPractice</h3>
@@ -37,7 +39,7 @@
       <div ng-view=""></div>
 
       <div class="footer">
-        <p><span class="glyphicon glyphicon-heart"></span> from the Yeoman team</p>
+
       </div>
     </div>
 
@@ -67,7 +69,7 @@
         <!-- build:js({.tmp,app}) scripts/scripts.js -->
         <script src="scripts/app.js"></script>
         <script src="scripts/controllers/main.js"></script>
-        <script src="scripts/controllers/about.js"></script>
+        <script src="scripts/controllers/checkboxes.js"></script>
         <!-- endbuild -->
 </body>
 </html>

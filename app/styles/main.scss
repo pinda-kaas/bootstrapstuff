@@ -68,7 +68,6 @@ body {
   }
 }
 
-
 /* Responsive: Portrait tablets and up */
 @media screen and (min-width: 768px) {
   .container {
@@ -92,12 +91,14 @@ body {
   }
 }
 
-.row img
-{max-width: 250px;}
+.row img {
+  max-width: 250px;
+}
 
 .summary-link .image-wrapper {
   position: relative;
 }
+
 .summary-link .image-wrapper .image-caption {
   font-family: "proxima-nova", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: bold;
@@ -143,4 +144,37 @@ body {
   opacity: 0.5;
 }
 
+.buttonDim {
+  @include button-variant(#333332, #a22222, #e33333);
+}
+
+.row {
+  margin: 0 auto;
+  @include clearfix();
+}
+
+.combo {
+  height: 20px;
+}
+
+.grad {
+//  @include gradient-horizontal($start-color: #2f9771, $end-color: #978442, $start-percent: 0%, $end-percent: 100%);
+//  @include make-row;
+  @include make-xs-column(3);
+  height: 30px;
+}
+
+
+section {
+  @include make-row();
+  article {
+    @include make-lg-column(2);
+  }
+}
+
+
+.example {
+  @include size (16%, 300px);
+  background-color: red;
+}
 

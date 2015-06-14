@@ -27,7 +27,11 @@ angular
         templateUrl: 'views/about.html',
         controller: 'AboutCtrl'
       })
+      .when('/checkboxes', {
+        templateUrl: 'views/checkboxes.html',
+        controller: 'CheckboxesCtrl'
+      })
       .otherwise({
-        redirectTo: '/home'
+        redirectTo: '/checkboxes'
       });
   });
