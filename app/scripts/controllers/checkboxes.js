@@ -10,4 +10,6 @@
 angular.module('bootstrapPracticeApp')
   .controller('CheckboxesCtrl', function ($scope) {
   console.log('CheckboxesCtrl init');
+    $scope.check=1;
+
   });

@@ -5,20 +5,14 @@
 
   <div class="btn-group" data-toggle="buttons">
 
-    <label class="btn btn-default">
-      <span class="glyphicon glyphicon-unchecked"></span>
+    <label class="btn btn-default" ng-click="check=1">
+      <span class="glyphicon" ng-class="check==1 ? 'glyphicon-record' : 'glyphicon-unchecked'" ></span>
       <input type="checkbox" /> Option 1
     </label>
 
-    <label class="btn btn-default">
-      <span class="glyphicon glyphicon-unchecked"></span>
+    <label class="btn btn-default" ng-click="check=2">
+      <span class="glyphicon" ng-class="check==2 ? 'glyphicon-record' : 'glyphicon-unchecked'"></span>
       <input type="checkbox" /> Option 2
-    </label>
-
-
-    <label class="btn btn-default">
-      <span class="glyphicon glyphicon-unchecked"></span>
-      <input type="checkbox" /> Option 3
     </label>
 
   </div>
