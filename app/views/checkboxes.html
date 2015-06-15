@@ -1,20 +1,64 @@
 
 <div class="row">
 
-  <input type="text"/>
+  <div class="col-sm-12 ">
 
-  <div class="btn-group" data-toggle="buttons">
+    <input type="text"/>
 
-    <label class="btn btn-default" ng-click="check=1">
-      <span class="glyphicon" ng-class="check==1 ? 'glyphicon-record' : 'glyphicon-unchecked'" ></span>
-      <input type="checkbox" /> Option 1
-    </label>
+    <div class="btn-group" data-toggle="buttons">
 
-    <label class="btn btn-default" ng-click="check=2">
-      <span class="glyphicon" ng-class="check==2 ? 'glyphicon-record' : 'glyphicon-unchecked'"></span>
-      <input type="checkbox" /> Option 2
-    </label>
+      <label class="btn btn-default" ng-click="check=1">
+        <span class="glyphicon" ng-class="check==1 ? 'glyphicon-record' : 'glyphicon-unchecked'"></span>
+        <input type="checkbox"/> Option 1
+      </label>
+
+      <label class="btn btn-default" ng-click="check=2">
+        <span class="glyphicon" ng-class="check==2 ? 'glyphicon-record' : 'glyphicon-unchecked'"></span>
+        <input type="checkbox"/> Option 2
+      </label>
+
+
+      <label class="btn btn-default" ng-click="check=3">
+        <span class="glyphicon" ng-class="check==3 ? 'glyphicon-record' : 'glyphicon-unchecked'"></span>
+        <input type="checkbox"/> Option 3
+      </label>
+
+    </div>
+  </div>
+
+
+</div>
+
+<div class="row">
+
+  <div class="col-md-12">
+    <p class="input-group">
+      <input type="text" class="form-control" datepicker-popup="{{format}}" ng-model="dt" is-open="opened" min-date="minDate" max-date="'2015-06-22'" datepicker-options="dateOptions" date-disabled="disabled(date, mode)" ng-required="true" close-text="Close" />
+              <span class="input-group-btn">
+                <button type="button" class="btn btn-default" ng-click="open($event)"><i class="glyphicon glyphicon-calendar"></i></button>
+              </span>
+    </p>
+  </div>
+
+  <div class="col-md-12">
+    <div class="dropdown">
+      <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-expanded="true">
+        Dropdown
+        <span class="caret"></span>
+      </button>
+      <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+        <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Action</a></li>
+        <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Another action</a></li>
+        <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Something else here</a></li>
+        <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Separated link</a></li>
+      </ul>
+    </div>
 
   </div>
 
+
+
+
+
 </div>
+

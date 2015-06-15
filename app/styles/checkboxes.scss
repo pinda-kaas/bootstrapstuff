@@ -3,9 +3,24 @@ $icon-font-path: "../bower_components/bootstrap-sass-official/assets/fonts/boots
 @import "bootstrap-sass-official/assets/stylesheets/_bootstrap.scss";
 // endbower
 
+$dropdownwidth:180px;
+
 .checkboxes
 {
   display:inline-block;
   margin:5px;
   padding: 10px;
 }
+
+.dropdown
+{
+  width:$dropdownwidth;
+  margin:10px;
+  padding:10px;
+}
+//
+//input
+//{
+//  margin:10px;
+//  padding:10px;
+//}
